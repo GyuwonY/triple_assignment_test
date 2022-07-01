@@ -18,7 +18,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Table(name = "tbl_event", indexes = {
         @Index(name = "i_placeId", columnList = "placeId"),
-        @Index(name = "i_reviewId", columnList = "reviewId")
+        @Index(name = "i_reviewId", columnList = "reviewId"),
+        @Index(name = "i_userId", columnList = "userID")
 })
 @EntityListeners(AuditingEntityListener.class)
 public class ReviewEvent {
